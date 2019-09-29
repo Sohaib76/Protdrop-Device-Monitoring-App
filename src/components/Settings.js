@@ -22,10 +22,6 @@ export default class Swttings extends Component {
 
         <Container>
           
-        {/* <Header transparent style={{ backgroundColor:  JUNGLE}}>
-                            
-                           
-        </Header>   */}
         
         <LinearGradient colors={[JUNGLE, SAGE, LAUREL]} style={styles.linearGradient}>
          

@@ -16,18 +16,16 @@ export default class CardDashboard extends React.Component {
                 <TouchableOpacity activeOpacity={0.6}
                 style={{width: this.props.width,  height:Layout.window.height/4,justifyContent:'space-around',alignSelf:'center',alignItems:'stretch'}}  onPress={()=> alert("SAD")}>
                     <Card containerStyle={{shadowOffset:{width:0,height:5},
-        justifyContent:"space-between",alignItems:'center',shadowRadius:5,shadowOpacity:1,height:Layout.window.height/4,
-        elevation: 8,borderRadius:10}}
+                        justifyContent:"space-between",alignItems:'center',shadowRadius:5,shadowOpacity:1,height:Layout.window.height/4,
+                        elevation: 8,borderRadius:10}}
 
                         
                         title={this.props.title}
-                        // titleStyle={{marginTop:60}}
-                    // featuredTitle = "CHAT"
+                   
                         
                         image={{uri: this.props.imgsrc}}
-                        //marginTop:0,marginLeft:30 ,
-                        imageStyle = {{ alignContent:'center',maxWidth:80,maxHeight:80,justifyContent:'center',alignItems: 'center',}}
-                >
+                      
+                        imageStyle = {{ alignContent:'center',width:this.props.imgwidth, height:80, justifyContent:'center',alignItems: 'center',}}>
                  
                             
                                 <View style={{height:5,justifyContent:'flex-start'

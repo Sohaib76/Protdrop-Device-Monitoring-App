@@ -11,38 +11,24 @@ export default class Dashboard extends Component<Props> {
            
        
             <View style={{backgroundColor:"#DAE0E2", flexDirection:"row", flex:2}}>  
-                <CardDashboard width={200} title="Sales By Product" imgsrc='https://www.ft.com/__origami/service/image/v2/images/raw/ftcms%3A347ece48-0f69-11e9-a3aa-118c761d2745?source=ig' 
+                <CardDashboard imgwidth={80} width={200} title="Sales By Product" imgsrc='https://www.ft.com/__origami/service/image/v2/images/raw/ftcms%3A347ece48-0f69-11e9-a3aa-118c761d2745?source=ig' 
                />
-                <CardDashboard width={200} title="Sales By Product" imgsrc='https://www.ft.com/__origami/service/image/v2/images/raw/ftcms%3A347ece48-0f69-11e9-a3aa-118c761d2745?source=ig' 
+                <CardDashboard imgwidth={80} width={200} title="Sales By Product" imgsrc='https://www.ft.com/__origami/service/image/v2/images/raw/ftcms%3A347ece48-0f69-11e9-a3aa-118c761d2745?source=ig' 
                />
 
             </View>
                
             <View style={{backgroundColor:"#DAE0E2", flexDirection:"row", flex:2}}> 
-                 <CardDashboard width={400} title="Sales By Product" imgsrc='https://www.ft.com/__origami/service/image/v2/images/raw/ftcms%3A347ece48-0f69-11e9-a3aa-118c761d2745?source=ig' 
+                 <CardDashboard imgwidth={200} width={400} title="Sales By Product" imgsrc='https://www.ft.com/__origami/service/image/v2/images/raw/ftcms%3A347ece48-0f69-11e9-a3aa-118c761d2745?source=ig' 
                />
             </View>
             <View style={{backgroundColor:"#DAE0E2", flexDirection:"row", flex:2}}> 
-                 <CardDashboard width={200} title="Sales By Product" imgsrc='https://www.ft.com/__origami/service/image/v2/images/raw/ftcms%3A347ece48-0f69-11e9-a3aa-118c761d2745?source=ig' 
+                 <CardDashboard imgwidth={80} width={200} title="Sales By Product" imgsrc='https://www.ft.com/__origami/service/image/v2/images/raw/ftcms%3A347ece48-0f69-11e9-a3aa-118c761d2745?source=ig' 
                />
-                 <CardDashboard width={200} title="Sales By Product" imgsrc='https://www.ft.com/__origami/service/image/v2/images/raw/ftcms%3A347ece48-0f69-11e9-a3aa-118c761d2745?source=ig' 
+                 <CardDashboard imgwidth={80} width={200} title="Sales By Product" imgsrc='https://www.ft.com/__origami/service/image/v2/images/raw/ftcms%3A347ece48-0f69-11e9-a3aa-118c761d2745?source=ig' 
                />
             </View>
-                        {/* <Card padder>
-                            <CardItem  cardBody button onPress={() => alert("This is Card Header")}>
-                            <Image source={{uri: 'Image URL'}} style={{height: 200, width: null, flex: 1}}/>
-                            </CardItem>
-                        </Card>
-                 
-                        <Card padder>
-                            <CardItem  cardBody button onPress={() => alert("This is Card Header")}>
-                            <Image source={{uri: 'Image URL'}} style={{height: 200, width: null, flex: 1}}/>
-                            </CardItem>
-                        </Card>
-             */}
-           
-          
-       
+                    
       </Container>
     );
   }

@@ -45,12 +45,6 @@ export default class Tables extends Component {
             <Text style={{fontSize:25, fontWeight:'bold'}}>
                 1
             </Text>
-             {/* <Text style={{fontSize:25, fontWeight:'bold', margin:10}}>
-                2
-            </Text>
-             <Text style={{fontSize:25, fontWeight:'bold', margin:10}}>
-                3
-            </Text> */}
                 <Icon
                 // reverse
                 name='arrowright'
