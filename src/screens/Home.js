@@ -1,33 +1,31 @@
 import React, {Component} from 'react';
 import { Container, Header, Tab, Tabs, TabHeading, Icon, Text } from 'native-base';
+import Dashboard from '../components/Dashboard.js';
 
-// const instructions = Platform.select({
-//   ios: 'Press Cmd+R to reload,\n' + 'Cmd+D or shake for dev menu',
-//   android:
-//     'Double tap R on your keyboard to reload,\n' +
-//     'Shake or press menu button for dev menu',
-// });
-// type Props = {};
 
 export default class Home extends Component<Props> {
   render() {
     return (
       <Container>
-        <Header hasTabs/>
-        <Tabs>
-          <Tab heading={ <TabHeading><Icon name="camera" /><Text>Camera</Text></TabHeading>}>
-            {/* <Tab1 /> */}
-            <Text>Tab1</Text>
+        {/* <Header hasTabs/> */}
+         <Tabs tabBarUnderlineStyle={{ backgroundColor: "black" }} style={{marginTop:5}}>
+          <Tab
+           heading={ <TabHeading style={{ backgroundColor: "white" }}><Icon name="piechart" type="AntDesign" style={{color: 'black'}}/></TabHeading>}>
+            <Dashboard/>
           </Tab>
-          <Tab heading={ <TabHeading><Text>No Icon</Text></TabHeading>}>
-            <Text>Tab2</Text>
+          <Tab
+             heading={ <TabHeading style={{ backgroundColor: "white" }}><Icon name="device-desktop" type="Octicons" style={{color: 'black'}}/></TabHeading>}>
+            <Text style={{margin:20,fontSize:20}}>Deviice</Text>
           </Tab>
-          <Tab heading={ <TabHeading><Icon name="apps" /></TabHeading>}>
-            <Text>Tab3</Text>
+          <Tab
+           heading={ <TabHeading style={{ backgroundColor: "white" }}><Icon name="table" type="AntDesign" style={{color: 'black'}}/></TabHeading>}>
+            <Text style={{margin:20,fontSize:20}}>Table</Text>
           </Tab>
-          <Tab heading={ <TabHeading><Icon name="apps" /></TabHeading>}>
-            <Text>Tab4</Text>
+          <Tab
+             heading={ <TabHeading style={{ backgroundColor: "white" }}><Icon name="settings" style={{color: 'black'}}/></TabHeading>}>
+            <Text style={{margin:20,fontSize:20}}>Settings</Text>
           </Tab>
+          
         </Tabs>
       </Container>
     );
