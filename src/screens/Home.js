@@ -1,6 +1,8 @@
 import React, {Component} from 'react';
 import { Container, Header, Tab, Tabs, TabHeading, Icon, Text } from 'native-base';
 import Dashboard from '../components/Dashboard.js';
+import Device_config from '../components/Device_config.js';
+import Settings from '../components/Settings.js';
 
 
 export default class Home extends Component<Props> {
@@ -15,7 +17,7 @@ export default class Home extends Component<Props> {
           </Tab>
           <Tab
              heading={ <TabHeading style={{ backgroundColor: "white" }}><Icon name="device-desktop" type="Octicons" style={{color: 'black'}}/></TabHeading>}>
-            <Text style={{margin:20,fontSize:20}}>Deviice</Text>
+            <Device_config/>
           </Tab>
           <Tab
            heading={ <TabHeading style={{ backgroundColor: "white" }}><Icon name="table" type="AntDesign" style={{color: 'black'}}/></TabHeading>}>
@@ -23,7 +25,7 @@ export default class Home extends Component<Props> {
           </Tab>
           <Tab
              heading={ <TabHeading style={{ backgroundColor: "white" }}><Icon name="settings" style={{color: 'black'}}/></TabHeading>}>
-            <Text style={{margin:20,fontSize:20}}>Settings</Text>
+            <Settings/>
           </Tab>
           
         </Tabs>

@@ -1,33 +1,45 @@
 import React, {Component} from 'react';
 import { Container, Body,Thumbnail,Header, Tab, Tabs, TabHeading, Icon, Text, Button,Content,Card,CardItem,CardBody,Left,Right } from 'native-base';
-import { Image } from 'react-native';
+import { Image,View } from 'react-native';
 import { Col, Row, Grid } from 'react-native-easy-grid';
+import CardDashboard from './CardDashboard.js';
 
 export default class Dashboard extends Component<Props> {
   render() {
     return (
       <Container>
            
-         
-            <Grid>
-                <Col style={{ height: 200 }}>
-                     <Row style={{ width: 100 , backgroundColor:'red'}}>
-                        <Card padder>
-                            <CardItem  cardBody button onPress={() => alert("This is Card Header")}>
-                            <Image source={{uri: 'Image URL'}} style={{height: 200, width: null, flex: 1}}/>
-                            </CardItem>
-                        </Card>
-                    </Row>
-                    <Row style={{ width: 100 }}>
-                        <Card padder>
-                            <CardItem  cardBody button onPress={() => alert("This is Card Header")}>
-                            <Image source={{uri: 'Image URL'}} style={{height: 200, width: null, flex: 1}}/>
-                            </CardItem>
-                        </Card>
-                    </Row>
-                </Col>
+       
+            <View style={{backgroundColor:"red", flexDirection:"row", flex:2}}>  
+                <CardDashboard width={200} title="Sales By Product" imgsrc='https://www.ft.com/__origami/service/image/v2/images/raw/ftcms%3A347ece48-0f69-11e9-a3aa-118c761d2745?source=ig' 
+               />
+                <CardDashboard width={200} title="Sales By Product" imgsrc='https://www.ft.com/__origami/service/image/v2/images/raw/ftcms%3A347ece48-0f69-11e9-a3aa-118c761d2745?source=ig' 
+               />
+
+            </View>
                
-            </Grid>
+            <View style={{backgroundColor:"yellow", flexDirection:"row", flex:2}}> 
+                 <CardDashboard width={400} title="Sales By Product" imgsrc='https://www.ft.com/__origami/service/image/v2/images/raw/ftcms%3A347ece48-0f69-11e9-a3aa-118c761d2745?source=ig' 
+               />
+            </View>
+            <View style={{backgroundColor:"green", flexDirection:"row", flex:2}}> 
+                 <CardDashboard width={200} title="Sales By Product" imgsrc='https://www.ft.com/__origami/service/image/v2/images/raw/ftcms%3A347ece48-0f69-11e9-a3aa-118c761d2745?source=ig' 
+               />
+                 <CardDashboard width={200} title="Sales By Product" imgsrc='https://www.ft.com/__origami/service/image/v2/images/raw/ftcms%3A347ece48-0f69-11e9-a3aa-118c761d2745?source=ig' 
+               />
+            </View>
+                        {/* <Card padder>
+                            <CardItem  cardBody button onPress={() => alert("This is Card Header")}>
+                            <Image source={{uri: 'Image URL'}} style={{height: 200, width: null, flex: 1}}/>
+                            </CardItem>
+                        </Card>
+                 
+                        <Card padder>
+                            <CardItem  cardBody button onPress={() => alert("This is Card Header")}>
+                            <Image source={{uri: 'Image URL'}} style={{height: 200, width: null, flex: 1}}/>
+                            </CardItem>
+                        </Card>
+             */}
            
           
        
