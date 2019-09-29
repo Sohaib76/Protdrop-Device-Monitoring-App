@@ -7,7 +7,8 @@ export default class Tables extends Component<Props> {
     return (
       <Container>
            
-            <Content>
+        <Content>
+            <Text>This is Table</Text>
         </Content>
       </Container>
     );

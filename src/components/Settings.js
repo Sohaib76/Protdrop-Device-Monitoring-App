@@ -6,10 +6,7 @@ import {Avatar} from 'react-native-elements';
 
 export default class Swttings extends Component {
 
-    static navigationOptions = { 
-        header: null,
-      
-     };
+
 
   render() {
 
@@ -19,31 +16,21 @@ export default class Swttings extends Component {
 
 
 
-    const navigation = this.props.navigation;
+
     return (
 
 
         <Container>
-            {/* '#302ca3' */}
-        <Header transparent style={{ backgroundColor:  JUNGLE}}>
-                            <Right>
-                                <Button bage transparent 
-                                    onPress={() => {
-                                        navigation.navigate("Home");
-                                    }}
-                                >
-                                    <Icon name='cross' type={'Entypo'} />
-                                </Button>
-                            </Right>
+          
+        {/* <Header transparent style={{ backgroundColor:  JUNGLE}}>
                             
                            
-        </Header>  
-        {/* '#302ca3', '#6a2ca3', '#A32CA3' */}
+        </Header>   */}
+        
         <LinearGradient colors={[JUNGLE, SAGE, LAUREL]} style={styles.linearGradient}>
          
           
-            {/* <Thumbnail style={{width:70,height:70,position:'relative',top:30,right:10}}
-            source={{uri : 'https://randomuser.me/api/portraits/men/41.jpg'}} /> */}
+        
             <View style={{alignItems:'center',justifyContent:'center'}}>
                 <Avatar
                     size="large"
@@ -64,7 +51,7 @@ export default class Swttings extends Component {
                 <CardItem/>
                 <CardItem/>
                 <CardItem>
-                    <Text>Herina Coplin</Text>
+                    <Text>Hera Coplin</Text>
                 </CardItem>
                 <CardItem/>
                 <CardItem>
@@ -80,7 +67,7 @@ export default class Swttings extends Component {
                 </CardItem>
                 <CardItem/>
                 <CardItem>
-                    <Text>herina@uxdivers.com</Text>
+                    <Text>hera@telcome.com</Text>
                 </CardItem>
                 <CardItem/>
                 <CardItem>
@@ -112,7 +99,6 @@ var styles = StyleSheet.create({
         paddingRight: 15,
         borderBottomLeftRadius: 5,
         borderBottomRightRadius: 5,
-        fontSize: 24,
         alignContent: 'center',
         
         justifyContent:'center'

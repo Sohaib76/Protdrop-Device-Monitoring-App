@@ -10,7 +10,7 @@ export default class Dashboard extends Component<Props> {
       <Container>
            
        
-            <View style={{backgroundColor:"red", flexDirection:"row", flex:2}}>  
+            <View style={{backgroundColor:"#DAE0E2", flexDirection:"row", flex:2}}>  
                 <CardDashboard width={200} title="Sales By Product" imgsrc='https://www.ft.com/__origami/service/image/v2/images/raw/ftcms%3A347ece48-0f69-11e9-a3aa-118c761d2745?source=ig' 
                />
                 <CardDashboard width={200} title="Sales By Product" imgsrc='https://www.ft.com/__origami/service/image/v2/images/raw/ftcms%3A347ece48-0f69-11e9-a3aa-118c761d2745?source=ig' 
@@ -18,11 +18,11 @@ export default class Dashboard extends Component<Props> {
 
             </View>
                
-            <View style={{backgroundColor:"yellow", flexDirection:"row", flex:2}}> 
+            <View style={{backgroundColor:"#DAE0E2", flexDirection:"row", flex:2}}> 
                  <CardDashboard width={400} title="Sales By Product" imgsrc='https://www.ft.com/__origami/service/image/v2/images/raw/ftcms%3A347ece48-0f69-11e9-a3aa-118c761d2745?source=ig' 
                />
             </View>
-            <View style={{backgroundColor:"green", flexDirection:"row", flex:2}}> 
+            <View style={{backgroundColor:"#DAE0E2", flexDirection:"row", flex:2}}> 
                  <CardDashboard width={200} title="Sales By Product" imgsrc='https://www.ft.com/__origami/service/image/v2/images/raw/ftcms%3A347ece48-0f69-11e9-a3aa-118c761d2745?source=ig' 
                />
                  <CardDashboard width={200} title="Sales By Product" imgsrc='https://www.ft.com/__origami/service/image/v2/images/raw/ftcms%3A347ece48-0f69-11e9-a3aa-118c761d2745?source=ig' 
