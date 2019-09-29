@@ -1,0 +1,3 @@
+rootProject.name = 'equip_monitor'
+
+include ':app'
