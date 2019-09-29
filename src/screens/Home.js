@@ -11,7 +11,7 @@ export default class Home extends Component<Props> {
     return (
       <Container>
         {/* <Header hasTabs/> */}
-         <Tabs tabBarUnderlineStyle={{ backgroundColor: "black" }} style={{marginTop:20}}>
+         <Tabs tabBarUnderlineStyle={{ backgroundColor: "black" }} style={{marginTop:15}}>
           <Tab
            heading={ <TabHeading style={{ backgroundColor: "white" }}><Icon name="piechart" type="AntDesign" style={{color: 'black'}}/></TabHeading>}>
             <Dashboard/>
